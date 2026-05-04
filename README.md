@@ -185,7 +185,3 @@ Patient time-series plots with anomalous readings highlighted in red are saved t
 ## References
 
 - MIMIC-IV Demo: https://physionet.org/content/mimic-iv-demo/2.2/
-- Isolation Forest: Liu et al., 2008
-- SHAP: Lundberg & Lee, 2017
-- dbt documentation: https://docs.getdbt.com
-- Apache Airflow: https://airflow.apache.org
