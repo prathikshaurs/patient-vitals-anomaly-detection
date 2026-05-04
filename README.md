@@ -180,6 +180,10 @@ Then open http://localhost:8080 and trigger the `patient_vitals_anomaly_detectio
 
 Patient time-series plots with anomalous readings highlighted in red are saved to `data/anomalies/`. A SHAP summary chart shows which features most commonly drove anomaly flags across all vital signs.
 
+## Dashboard
+
+![ICU Vitals Anomaly Detection Dashboard](data/anomalies/powerbi_dashboard.png)
+
 ---
 
 ## References
