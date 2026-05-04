@@ -13,22 +13,24 @@ The project demonstrates a production-style data engineering workflow: raw data 
 ---
 
 ## Pipeline Architecture
+
+```
 MIMIC-IV Demo (CSV)
-↓
+        ↓
 ingest.py — chunk-based ingestion into MySQL
-↓
+        ↓
 validate.py — missingness checks + physiologic threshold validation
-↓
+        ↓
 features.py — rolling mean, rolling std, lag features, rate of change
-↓
+        ↓
 train.py — Isolation Forest per vital sign + SHAP explainability
-↓
+        ↓
 dbt — staging → intermediate → mart layer transformations
-↓
+        ↓
 visualize.py — time-series plots with anomalies highlighted
-↓
+        ↓
 Airflow DAG — orchestrates all steps on a daily schedule
----
+```
 
 ## Results
 
@@ -71,6 +73,8 @@ Data validation identified 3 heart rate readings of 0 BPM — physiologically im
 ---
 
 ## Project Structure
+
+```
 patient-vitals-anomaly-detection/
 ├── src/
 │   ├── ingest.py            # Chunk-based ingestion of MIMIC-IV vitals into MySQL
@@ -93,7 +97,7 @@ patient-vitals-anomaly-detection/
 │   ├── processed/              # Cleaned data
 │   └── anomalies/              # Output charts (patient plots + SHAP summary)
 └── notebooks/                  # Exploratory analysis
----
+```
 
 ## Getting Started
 
