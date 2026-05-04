@@ -1,0 +1,7 @@
+airflow/
+data/raw/
+__pycache__/
+*.pyc
+dbt_project/target/
+dbt_project/dbt_packages/
+logs/
